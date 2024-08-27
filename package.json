@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -u 'Rajasegar Chandiran <rajasegar.c@gmail.com>'"
+    "deploy": "gh-pages -d dist -u \"github-actions <github-actions@github.com>\""
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
