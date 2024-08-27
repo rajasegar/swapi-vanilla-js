@@ -25,12 +25,14 @@ jobs:
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
 
-      - name: Setup git user
-        run: git config user.name "Rajasegar Chandiran"
+      # - name: Setup git user
+        # run: git config user.name "Rajasegar Chandiran"
 
-      - name: Setup git email
-        run: git config user.email rajasegar.c@gmail.com
+      # - name: Setup git email
+        # run: git config user.email rajasegar.c@gmail.com
         
       - name: Deploy project
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: npm run deploy
 
