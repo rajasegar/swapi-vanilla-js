@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapi Vanilla js</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Star Wars API</h1>
+    <p>
+      <label for="lst-resource">Resource:</label>
+      <select id="lst-resource">
+        <option value="people">People</option>
+        <option value="planets">Planets</option>
+        <option value="films">Films</option>
+        <option value="vehicles">Vehicles</option>
+        <option value="starships">Starships</option>
+        <option value="species">Species</option>
+      </select>
+    </p>
+    <p>
+      <input type="search" id="input-search" placeholder="Search..."/>
+      </p>
+    <main>
+      <section id="left-section"></section>
+      <section id="right-section"></section>
+      </main>
+    <p>
+      <button type="button" id="btn-prev">Previous</button>
+      <button type="button" id="btn-next">Next</button>
+    </p>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
